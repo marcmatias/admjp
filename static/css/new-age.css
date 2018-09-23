@@ -72,13 +72,13 @@ section h2 {
 }
 
 #mainNav .navbar-brand {
-  color: #fdcc52;
+  color: grey;
   font-family: "Eras ITC";
   font-weight: 300;
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #fcbd20;
+  color: grey;
 }
 
 #mainNav .navbar-toggler {
