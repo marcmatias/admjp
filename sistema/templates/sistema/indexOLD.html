@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Breve, projeto ADM!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/coming-soon.css' %}" rel="stylesheet">
+
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQVSURBVGhD7dptiFRVHMfxyUwtnxCzgszUFA008AExNM0QIRXUQH0hPgVqik+oFKRmCYViD0hQaA+KIogIipkhQoq+UFA0Ut+Uhb7RKLBECkwqv7/Z/S9nb/+5c/feu+Nd8Qcf2Dl75+y5M2fO+d87WypgZuMPXMBENbTEjMZt/Bc4gN5oMXkKvyI8CfMX1uFhFDoa4Bl4JxG6hMTTrT/exTFonp7AZgxDc2U7wgHfwnu4HrSFvsIzcPMQPkZ0job2oBPS5jFMwtSAXrTo31kA5VF8gX8RPUbT7W00mm4P4hCiB3u+Q2c0NX2g1cjrM/Q5onkeZ+EdfxlPoxydWfjLw3gFg/AydiP8/Q5Y9CGdn0C0D89JtIEXvdiL8Tuiz9NCUOqKP+sbZBMeQDR6u+0YvdXPQekIvc32u7Su4UlUy+PQZyqcbjNRmhM0fI9WUCZgC2aVH9VlP+xYzW3LUVh7WmPRlLyAT7AI5Rf+I1hna9RABuMfWPs0KNNhbV+roT67YO1p9UCmbIN1prmsvIrwj2yE8iKsTcuy5VOEx6eR+UQ2wDr7QA1Ec9V2Wc3/IVBegx27Vw31CadcWplPZDyss9/QBYrWfK1cPcuP6lYTbZB27DJYfoK1pxX2Vy3aO9bjKvahvB1ogFqLrcPj6IYwj0CboR1zE1o9lH6w9iz+xihUi0qU6Av3OsqZgnA501q9FW9A5YmWxvCJK2DpAFWn1axG2IdH07k7vPSCKmHvecvRkJXwSoEoLcnePlMt2m+SLNOn0Q4W/bwW3l6l8e6EZkyj6PPyI6JPEM3Hucia9tDn0GglVJEY/i2tpIqqikrjOYcRqBiVArrAeRMf4i3oBMNXSVH50rbux8xZiOhAK5X1mvZL0Br/i3bzl+p+TBQVcSoAV5Uf5RNVud7AjaaRShNbZCpGJbX2hoHlR360JGtztFL/Bp5AHtHqeQrRExBVvrHTKJpvoSeqCtW00gao3f4dqMyPzmXRq5RXtGL9Autb00gVrzuN4jIAcRdWHr3lw5FXnsWXUBWuGZA678MbcBxNiTRLcrNGl7LRDTAJ3Y8qXDQob7BxdPJZruebJZom+sB7A46jaVm4DEV4cZWEVrW+KFw+gzfgOAdRuKic9+5aVKPr/cJlKbzBxvkBedVhuUW76nl4A46jy4LCZQy8wcbJsw7LNeGlblJ51mG5RXc5wjuSSeRdh+UWXXJ6A45TyDpMV4k/wxtwnELWYZPhDTZOIeswRV87eAOOU/M6TNfvusDSbdJKZsAbbBzVYePg9RfS9y2Zo5P4Bt5AakWF6jxkit4Jr/Nau4hMGQmv41q7gky5fyI5u38ilnvmRPSVs9dxrWVetbSPHIHXea1oH9Hd+czRyegOir73vhsa/h0jeUqlO3EJ3ZhSj2WUAAAAAElFTkSuQmCC">
+    
+  </head>
+
+  <body>
+
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="{% static 'mp4/bg.mp4' %}" type="video/mp4">
+      Seu navegador não suporta a tag vídeo.
+    </video>
+
+    <div class="masthead">
+      <div class="masthead-bg"></div>
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-12 my-auto">
+            <div class="masthead-content text-white py-5 py-md-0">
+              <h1 class="mb-3">Em Breve!</h1>
+              <p>Nós estamos trabalhando duro no desenvolvimento desse site. Nosso alvo é lançá-lo em
+                <strong>Setembro de 2018</strong>! Fique atento para as próximas atualizações!
+              </p>
+              <p>
+              	<strong>Equipe ADM</strong>
+              </p>
+<!--               <div class="input-group input-group-newsletter">
+                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">Notify Me!</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--     <div class="social-icons">
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/coming-soon.min.js' %}"></script>
+
+  </body>
+
+</html>

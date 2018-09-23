@@ -9,83 +9,320 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Breve, projeto ADM!</title>
+    <title>JampaFácil</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/coming-soon.css' %}" rel="stylesheet">
+    <link href="{% static 'css/new-age.css' %}" rel="stylesheet">
+    <link href="{% static 'css/iphonecss.css' %}" rel="stylesheet">
+    <link href="{% static 'css/chatbot.css' %}" rel="stylesheet">
 
-    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQVSURBVGhD7dptiFRVHMfxyUwtnxCzgszUFA008AExNM0QIRXUQH0hPgVqik+oFKRmCYViD0hQaA+KIogIipkhQoq+UFA0Ut+Uhb7RKLBECkwqv7/Z/S9nb/+5c/feu+Nd8Qcf2Dl75+y5M2fO+d87WypgZuMPXMBENbTEjMZt/Bc4gN5oMXkKvyI8CfMX1uFhFDoa4Bl4JxG6hMTTrT/exTFonp7AZgxDc2U7wgHfwnu4HrSFvsIzcPMQPkZ0job2oBPS5jFMwtSAXrTo31kA5VF8gX8RPUbT7W00mm4P4hCiB3u+Q2c0NX2g1cjrM/Q5onkeZ+EdfxlPoxydWfjLw3gFg/AydiP8/Q5Y9CGdn0C0D89JtIEXvdiL8Tuiz9NCUOqKP+sbZBMeQDR6u+0YvdXPQekIvc32u7Su4UlUy+PQZyqcbjNRmhM0fI9WUCZgC2aVH9VlP+xYzW3LUVh7WmPRlLyAT7AI5Rf+I1hna9RABuMfWPs0KNNhbV+roT67YO1p9UCmbIN1prmsvIrwj2yE8iKsTcuy5VOEx6eR+UQ2wDr7QA1Ec9V2Wc3/IVBegx27Vw31CadcWplPZDyss9/QBYrWfK1cPcuP6lYTbZB27DJYfoK1pxX2Vy3aO9bjKvahvB1ogFqLrcPj6IYwj0CboR1zE1o9lH6w9iz+xihUi0qU6Av3OsqZgnA501q9FW9A5YmWxvCJK2DpAFWn1axG2IdH07k7vPSCKmHvecvRkJXwSoEoLcnePlMt2m+SLNOn0Q4W/bwW3l6l8e6EZkyj6PPyI6JPEM3Hucia9tDn0GglVJEY/i2tpIqqikrjOYcRqBiVArrAeRMf4i3oBMNXSVH50rbux8xZiOhAK5X1mvZL0Br/i3bzl+p+TBQVcSoAV5Uf5RNVud7AjaaRShNbZCpGJbX2hoHlR360JGtztFL/Bp5AHtHqeQrRExBVvrHTKJpvoSeqCtW00gao3f4dqMyPzmXRq5RXtGL9Autb00gVrzuN4jIAcRdWHr3lw5FXnsWXUBWuGZA678MbcBxNiTRLcrNGl7LRDTAJ3Y8qXDQob7BxdPJZruebJZom+sB7A46jaVm4DEV4cZWEVrW+KFw+gzfgOAdRuKic9+5aVKPr/cJlKbzBxvkBedVhuUW76nl4A46jy4LCZQy8wcbJsw7LNeGlblJ51mG5RXc5wjuSSeRdh+UWXXJ6A45TyDpMV4k/wxtwnELWYZPhDTZOIeswRV87eAOOU/M6TNfvusDSbdJKZsAbbBzVYePg9RfS9y2Zo5P4Bt5AakWF6jxkit4Jr/Nau4hMGQmv41q7gky5fyI5u38ilnvmRPSVs9dxrWVetbSPHIHXea1oH9Hd+czRyegOir73vhsa/h0jeUqlO3EJ3ZhSj2WUAAAAAElFTkSuQmCC">
-    
   </head>
 
-  <body>
+  <body id="page-top">
 
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="{% static 'mp4/bg.mp4' %}" type="video/mp4">
-      Seu navegador não suporta a tag vídeo.
-    </video>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Jampa Fácil</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Converse</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">Características</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Grupo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#doc">Documentação</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <div class="masthead">
-      <div class="masthead-bg"></div>
+    <header class="masthead bgmaster">
       <div class="container h-100">
         <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">Em Breve!</h1>
-              <p>Nós estamos trabalhando duro no desenvolvimento desse site. Nosso alvo é lançá-lo em
-                <strong>Setembro de 2018</strong>! Fique atento para as próximas atualizações!
-              </p>
-              <p>
-              	<strong>Equipe ADM</strong>
-              </p>
-<!--               <div class="input-group input-group-newsletter">
-                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Notify Me!</button>
-                </div>
-              </div> -->
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">A inteligência artificial que vai te ajudar no dia a dia em João Pessoa!</h1>
+              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Experimente agora!</a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="iphone-x">
+                <div class="divider"></div>
+                <div class="bezel"></div>
+                <div class="screen" style="background-image: url('{% static "img/jampafacil.jpg" %}')"></div>
+                <div class="speaker"></div>
+                <div class="camera"></div>
+                <div class="button mute"></div>
+                <div class="button vol-up"></div>
+                <div class="button vol-down"></div>
+                <div class="button right"></div>
+                <div class="divider"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
+
+    <section class="contact bg-primary" id="download">
+      <h2 class="section-heading mb-0">Converse com o bot Jampa Fácil agora!</h2>
+      <p>Nosso bot está disponível em aplicativos de chat e redes sociais</p>
+        <div class="container mt-5">
+          <ul class="list-inline list-social">
+            <li class="list-inline-item social-telegram">
+              <a href="#">
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-facebook">
+              <a href="#">
+                <i class="fab fa-facebook-messenger"></i>
+              </a>
+            </li>
+            <li class="list-inline-item social-twitter">
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Inteligência artificial ao alcance de suas mãos</h2>
+          <p class="text-muted">Conheça mais</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-12 col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="iphone-x">
+                <div class="divider"></div>
+                <div class="bezel"></div>
+                <div class="screen" style="background-image: url('{% static "img/botchat.jpg" %}'); background-size: 280px 98%;"></div>
+                <div class="speaker"></div>
+                <div class="camera"></div>
+                <div class="button mute"></div>
+                <div class="button vol-up"></div>
+                <div class="button vol-down"></div>
+                <div class="button right"></div>
+                <div class="divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-bubbles text-primary"></i>
+                    <h3>Uso flexível</h3>
+                    <p class="text-muted">Pergunte sobre reciclagem, problemas com energia elétrica ou com sistema de abastecimento de água e receba respostas eficientes.</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>Plataformas</h3>
+                    <p class="text-muted">Acessível via smartphone e desktop através de navegador, aplicativos de chat e redes sociais</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h3>Livre para usar</h3>
+                    <p class="text-muted">Robô gratuito para uso!</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock text-primary"></i>
+                    <h3>Segurança</h3>
+                    <p class="text-muted">Privacidade mantida, dados trocados com o robô não são vinculados ao nome de usuário nem a dados pessoais.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Pare de buscar.<br>Converse e encontre a solução.</h2>
+          <a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Conheça mais!</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+
+    <section class="contact bg-white" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Nossa Equipe</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 ml-auto text-center">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <!-- <th>Matrícula</th> -->
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Alexandre Silva dos Santos</td>
+                  <!-- <td>1710018026</td> -->
+                </tr>
+                <tr>
+                  <td>Anibal de Medeiros Batista Filho</td>
+                  <!-- <td>1710017987</td> -->
+                </tr>
+                <tr>
+                  <td>Marcel Marques</td>
+                  <!-- <td>1710017713</td> -->
+                </tr>
+                <tr>
+                  <td>Rodrigo Oliveira Gomes dos Santos</td>
+                  <!-- <td>1710019576</td> -->
+                </tr>
+                <tr>
+                  <td>Ronaldo Costa Cordeiro</td>
+                  <!-- <td>1710017723</td> -->
+                </tr>
+                <tr>
+                  <td>Tayrone Cigano</td>
+                  <!-- <td>1710017723</td> -->
+                </tr>
+              </tbody>
+            </table><br>
+          <a class="btn btn-light btn-xl js-scroll-trigger sr-button" href="#doc">Documentação</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc bgmaster" id="doc">
+      <div class="container text-center text-white">
+        <h2 class="mb-4">Documentação e maiores detalhes</h2><br>
+          <div class="row">
+            <div class="col-sm col-md-12 p-3">
+              <a class="btn btn-outline btn-xl" href="#" data-sr-id="9">Relatório</a>
+            </div>
+            <div class="col-sm col-md-12 p-3">
+              <a class="btn btn-outline btn-xl" style="min-width: 174px" href="#" data-sr-id="10">Análise</a>
+            </div>
+<!--             <div class="col-sm col-md-6 col-lg-3 p-3">
+              <a class="btn btn-outline btn-xl" href="https://docs.google.com/uc?export=download&amp;id=0B1KPxQ6Uj8AGOS1wRnpsb25jQlk" data-sr-id="11">Baixar APK</a>
+            </div>
+            <div class="col-sm col-md-6 col-lg-3 p-3">
+              <a class="btn btn-outline btn-xl" href="http://www.youtube.com/watch?v=WIcqigws3KI" data-sr-id="12">Vídeo APK</a>
+            </div> -->
+          </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="container">
+        <p>&copy; ADM 2018. Todos os direitos reservados.</p>
+<!--         <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">Privacy</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </div> -->
+    </footer>
+
+    <!-- CHATBOT -->
+    <div class="container">
+      <div class="row">
+        <div id="Smallchat">
+            <div class="Layout Layout-open Layout-expand Layout-right" style="background-color: #000000;color: rgb(255, 255, 0);opacity: 5;border-radius: 10px;">
+            
+            <iframe
+              width="300"
+              height="480"
+              allow="microphone"
+              src="https://console.dialogflow.com/api-client/demo/embedded/df69e201-5af5-4a54-84e3-4f0075e2b701">
+            </iframe>
+              </div>
+            </div>
+      </div>
+    
+        <!--===============CHAT ON BUTTON STRART===============-->
+        <div class="chat_on"> <span class="chat_on_icon"><img style="margin-top: 3px" src='{% static "img/bot.png" %}' width="24px" height="24px"></span> </div>
+        <!--===============CHAT ON BUTTON END===============-->
+    
     </div>
 
-<!--     <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div> -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="{% static 'js/coming-soon.min.js' %}"></script>
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js'%}"></script>
 
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/new-age.min.js'%}"></script>
+
+    <script type="text/javascript">
+        // CHAT BOOT MESSENGER//
+        $(document).ready(function(){
+          
+            $(".chat_on").click(function(){
+                $(".Layout").toggle();
+               
+            });
+            
+            $(".chat_close_icon").click(function(){
+                $(".Layout").hide();
+                $(".chat_on").show(300);
+            });
+            
+        });
+
+    </script>
   </body>
 
 </html>
