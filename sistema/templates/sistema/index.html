@@ -59,7 +59,7 @@
       </div>
     </nav>
 
-    <header class="masthead bgmaster">
+    <header class="masthead bgmaster unselectable">
       <div class="container h-100">
         <div class="row h-100">
           <div class="col-lg-7 my-auto">
@@ -88,17 +88,28 @@
       </div>
     </header>
 
-    <section class="contact bg-primary" id="download">
-      <h2 class="section-heading mb-0">Converse com o bot Jampa Fácil agora!</h2>
-      <p>Nosso bot está disponível em aplicativos de chat e redes sociais</p>
+    <section class="contact bg-primary unselectable" id="download">
+      <h2 class="section-heading mb-0">Teste o nosso protótipo agora!</h2>
+      <p>Nosso bot estará disponível em aplicativos de chat e redes sociais em breve</p>
         <div class="container mt-5">
           <ul class="list-inline list-social">
-            <li class="list-inline-item social-telegram">
+            <li class="list-inline-item">
+              <a href="print.html" data-toggle="tooltip" data-placement="bottom" title="Abra uma janela e teste o bot diretamente na plataforma em que está sendo desenvolvido."  
+                 onclick="window.open('https://console.dialogflow.com/api-client/demo/embedded/df69e201-5af5-4a54-84e3-4f0075e2b701', 
+                 'newwindow', 
+                 'width=400,height=480'); 
+                 return false;" style="background-color: white">
+                <span class="chat_on_icon">
+                  <img style="margin-top: -14px" src='{% static "img/dialogflow.png" %}' width="44px">
+                </span> 
+              </a>
+            </li>
+<!--             <li class="list-inline-item social-telegram">
               <a href="#">
                 <i class="fab fa-telegram-plane"></i>
               </a>
-            </li>
-            <li class="list-inline-item social-facebook">
+            </li> -->
+<!--             <li class="list-inline-item social-facebook">
               <a href="#">
                 <i class="fab fa-facebook-messenger"></i>
               </a>
@@ -107,12 +118,12 @@
               <a href="#">
                 <i class="fab fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="features unselectable" id="features">
       <div class="container">
         <div class="section-heading text-center">
           <h2>Inteligência artificial ao alcance de suas mãos</h2>
@@ -176,7 +187,7 @@
       </div>
     </section>
 
-    <section class="cta">
+    <section class="cta unselectable">
       <div class="cta-content">
         <div class="container">
           <h2>Pare de buscar.<br>Converse e encontre a solução.</h2>
@@ -187,7 +198,7 @@
     </section>
 
 
-    <section class="contact bg-white" id="contact">
+    <section class="contact bg-white unselectable" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
@@ -242,7 +253,7 @@
         <h2 class="mb-4">Documentação e maiores detalhes</h2><br>
           <div class="row">
             <div class="col-sm col-md-12 p-3">
-              <a class="btn btn-outline btn-xl" href="https://canvanizer.com/slideshow/wnh0Yzaak5yhY#/" data-sr-id="9">Canvas</a>
+              <a class="btn btn-outline btn-xl" target="_blank" href="https://canvanizer.com/canvas/rUiTaPliToQSK" data-sr-id="9">Canvas</a>
             </div>
 <!--             <div class="col-sm col-md-12 p-3">
               <a class="btn btn-outline btn-xl" style="min-width: 174px" href="#" data-sr-id="10">Análise</a>
@@ -279,20 +290,20 @@
     <div class="container">
       <div class="row">
         <div id="Smallchat">
-            <div class="Layout Layout-open Layout-expand Layout-right" style="background-color: #000000;color: rgb(255, 255, 0);opacity: 5;border-radius: 10px;">
+            <div class="Layout Layout-open Layout-expand Layout-right unselectable">
             
             <iframe
-              width="300"
+              width="385"
               height="480"
               allow="microphone"
-              src="https://console.dialogflow.com/api-client/demo/embedded/df69e201-5af5-4a54-84e3-4f0075e2b701">
+              src="https://console.dialogflow.com/api-client/demo/embedded/df69e201-5af5-4a54-84e3-4f0075e2b701" cl >
             </iframe>
               </div>
             </div>
       </div>
     
         <!--===============CHAT ON BUTTON STRART===============-->
-        <div class="chat_on"> <span class="chat_on_icon"><img style="margin-top: 3px" src='{% static "img/bot.png" %}' width="24px" height="24px"></span> </div>
+        <div class="chat_on unselectable" data-toggle="tooltip" data-placement="left" title="Clique e teste agora!"> <span class="chat_on_icon"><img style="margin-top: 3px" src='{% static "img/bot.png" %}' width="24px" height="24px"></span> </div>
         <!--===============CHAT ON BUTTON END===============-->
     
     </div>
@@ -323,7 +334,9 @@
             });
             
         });
-
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
   </body>
 

@@ -81,7 +81,7 @@
 }
 
 #Smallchat .Layout-right {
- right:30px
+ right:120px
 }
 
 #Smallchat .Layout-open {
@@ -314,4 +314,10 @@
 }
 #Smallchat .Input-emoji .Input_button-emoji .Icon path, #Smallchat .Input_button:hover .Icon path {
     fill: #2c2c46;
+}
+
+@media (max-width: 376px) {
+  #Smallchat .Layout-right {
+   right:80px
+  }
 }
